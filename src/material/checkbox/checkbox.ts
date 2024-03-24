@@ -187,6 +187,12 @@ export class MatCheckbox
   /** The value attribute of the native input element */
   @Input() value: string;
 
+  @Input() ariaExpanded: boolean = false;
+
+  @Input() ariaControls: string | null = null;
+  
+  @Input() ariaOwns: string | null = null;
+
   /** Whether the checkbox has a ripple. */
   @Input({transform: booleanAttribute}) disableRipple: boolean;
 
